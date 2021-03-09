@@ -1,0 +1,6 @@
+{% block content %}
+<h1>UH OH! THERE WAS AN ERROR, RETURNING YOU TO THE QUESTION YOU WERE ON</h1>
+<form action="/questions/{{responses|length}}">
+    <button method="GET">Return to survey!</button>
+</form>
+{% endblock %}
