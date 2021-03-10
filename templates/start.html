@@ -4,7 +4,7 @@
 <h1>This is the start page!</h1>
 <h1>{{ survey.title }}</h1>
 <p>{{ survey.instructions }}</p>
-<form action="/questions/{{responses|length}}">
-    <button method="GET">Start survey!</button>
+<form action="/start">
+    <button method="POST">Start survey!</button>
 </form>
 {% endblock %}
